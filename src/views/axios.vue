@@ -24,7 +24,7 @@ import { ref } from "vue"
 import axios from "../utils/axios"
 
 const loading = ref(false)
-const userInfo = ref(null)
+const userInfo = ref<any>({})
 
 const getUserInfo = () => {
   loading.value = true
